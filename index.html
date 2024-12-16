@@ -13,7 +13,7 @@
    <div class="home-icon"></div>
    <nav>
     <a href="#">Home</a>
-    <a href="#">Our Packages</a>
+    <a href="#our-package-section">Our Packages</a>
     <a href="#">Call Us</a>
    </nav>
 
@@ -22,17 +22,52 @@
 <hr>
 
 <main>
-    <header>
-        <h1>Your Trusted Travel Agent</h1>  
+    <header class="main-content-header">
+        <h1>Orange Cat Travel Agent</h1>
+        <h3>Your Happiness is Our Happiness</h3>  
     </header>
 
-    <h3>Your Happiness is Our Happiness</h3>
-
-    <section>
-        <aside>
+<!--Home Content-->
+    <section class="home-container">
+        <aside class="home-item">
             <div class="banner-img"></div>
+            <div class="banner-caption">Tashirojima Cat Shrine</div>
         </aside>
+
+<!--Form Contanct Us-->
+        <form class="home-item">
+            <h3>Contact Us</h3>
+            <p>Our sales team will reach out to you within 24 hours after receiving your information.
+                <br>
+                <br>We're here to assist you!
+            </p>
+
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" name="email"><br>
+        
+            <label for="interest">What are you interested in?</label><br>
+            <select id="interest" name="interest" required>
+                <option value="shopping">Shopping</option>
+                <option value="attraction">Attraction</option>
+                <option value="adventure">Adventure</option>
+                <option value="staycation">Staycation</option>
+                <option value="food">Food</option>
+            </select>
+
+            <input type="submit" value="Send">
+        </form>
     </section>
+
+<!--Our Packages Content-->
+    <section id="our-package-section">
+        <header class="content-header">
+            <h1>Our Package</h1>
+        </header>
+
+    </section>
+
 </main>
 
 <footer>

@@ -6,6 +6,10 @@ body {background-color: snow;}
     justify-content: space-between;
 }
 
+.main-content-header {
+    text-align: center;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -20,6 +24,9 @@ nav>a {
     text-decoration: none;
     border-color: mistyrose;
     color: lightcoral;
+    background-color: mistyrose;
+    border-radius: 15%;
+    margin-right: 4px;
 }
 
 .home-icon {
@@ -41,4 +48,54 @@ hr {
     background-image: url(https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2021/05/Tashirojima-Shrine-cats-LCB-770x513.jpg);
     background-size: cover;
     background-position: center;
+}
+.banner-caption {
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.home-container {
+    display: flex;
+    gap: 18px;
+}
+
+.home-item {flex: 1;}
+
+form {
+    background-color: peachpuff;
+    text-align: left;
+    padding-left: 12px;
+}
+
+input {
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+    border: 1px solid;
+    border-color: darkseagreen;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+select {
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+    border: 1px solid;
+    border-color: darkseagreen;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.content-header {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 24px;
+    text-align: center;
+    font-family: math;
 }
