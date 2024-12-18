@@ -1,6 +1,4 @@
 
-body {background-color: snow;}
-
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +60,7 @@ hr {
 .home-item {flex: 1;}
 
 form {
-    background-color: peachpuff;
+    background-color: mistyrose;
     text-align: left;
     padding-left: 12px;
 }
@@ -72,9 +70,7 @@ input {
     width: 200px;
     height: 24px;
     border: 1px solid;
-    border-color: darkseagreen;
-    margin-top: 6px;
-    margin-bottom: 10px;
+    border-color: lightcoral;
 }
 
 select {
@@ -82,16 +78,19 @@ select {
     width: 200px;
     height: 24px;
     border: 1px solid;
-    border-color: darkseagreen;
+    border-color: lightcoral;
     margin-top: 6px;
     margin-bottom: 10px;
 }
 
 .content-header {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 42px;
+    padding-bottom: 42px;
     margin-top: 24px;
     text-align: center;
+    border: 2px solid;
+    background-color: mistyrose;
+    border-color: mistyrose;
 }
 
 footer {
