@@ -1,9 +1,15 @@
 
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
 }
 
+/*home content style*/
 .main-content-header {
     text-align: center;
 }
@@ -23,7 +29,7 @@ nav>a {
     border-color: mistyrose;
     color: lightcoral;
     background-color: mistyrose;
-    border-radius: 15%;
+    border-radius: 10%;
     margin-right: 4px;
 }
 
@@ -41,12 +47,33 @@ hr {
     border-color: mistyrose;
 }
 
-.banner-img {
+.home-banner {flex: 1 1 75%;}
+.banner-1 {
     height: 320px;
     background-image: url(https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2021/05/Tashirojima-Shrine-cats-LCB-770x513.jpg);
     background-size: cover;
     background-position: center;
 }
+
+.banner-2 {
+    height: 320px;
+    background-image: url(https://a3.cdn.japantravel.com/photo/poi-17-212191/768x512!/kyoto-kiyomizu-dera-212191.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner-3 {
+    height: 320px;
+    background-image: url(https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.banner-4 {
+    height: 320px;
+    background-image: url(https://images.pexels.com/photos/2711640/pexels-photo-2711640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+
 .banner-caption {
     margin-top: 12px;
     font-style: italic;
@@ -57,12 +84,16 @@ hr {
     gap: 18px;
 }
 
-.home-item {flex: 1;}
+.home-item {
+    flex: 1 1 25%;
+    height: 450px;}
 
+/*form style*/
 form {
     background-color: mistyrose;
     text-align: left;
     padding-left: 12px;
+    padding-right: 10px;
 }
 
 input {
@@ -70,7 +101,8 @@ input {
     width: 200px;
     height: 24px;
     border: 1px solid;
-    border-color: lightcoral;
+    border-color:mistyrose;
+    margin-bottom: 10px;
 }
 
 select {
@@ -78,8 +110,7 @@ select {
     width: 200px;
     height: 24px;
     border: 1px solid;
-    border-color: lightcoral;
-    margin-top: 6px;
+    border-color:mistyrose;
     margin-bottom: 10px;
 }
 
@@ -93,8 +124,40 @@ select {
     border-color: mistyrose;
 }
 
+/*testimonial section style*/
+.testimonial-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+}
+
 footer {
     margin-top: 24px;
     text-align: center;
     font-family: math;
+}
+
+@media only screen and (max-width: 480px){
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-icon {
+        margin-bottom: 8px;
+    }
+
+    .home-container {
+        flex-direction: column;
+    }
+
+    form {
+        text-align: center;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }

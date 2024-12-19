@@ -12,9 +12,9 @@
 <header class="main-header">
    <div class="home-icon"></div>
    <nav>
-    <a href="#">Home</a>
+    <a href="#home-section">Home</a>
     <a href="#our-package-section">Our Packages</a>
-    <a href="#">Call Us</a>
+    <a href="#cta-section">Call Us</a>
    </nav>
 
 </header>
@@ -24,15 +24,18 @@
 <main>
     <header class="main-content-header">
         <h1>Orange Cat Travel Agent</h1>
-        <h3>Your Happiness is Our Happiness</h3>  
+        <h3>Your Journey, Our Passion</h3>  
     </header>
 
-<!--Home Content-->
-    <section class="home-container">
-        <aside class="home-item">
-            <div class="banner-img"></div>
-            <div class="banner-caption">Tashirojima Cat Shrine</div>
+<!--Home Content dengan banner autoslide-->
+    <section class="home-container" id="home-section">
+        <aside class="home-banner">
+            <div class="banner-img banner-1"></div>
+            <div class="banner-img banner-2"></div>
+            <div class="banner-img banner-3"></div>
+            <div class="banner-img banner-4"></div>
         </aside>
+     
 
 <!--Form Contanct Us-->
         <form class="home-item">
@@ -42,14 +45,15 @@
                 <br>We're here to assist you!
             </p>
 
-            <p>Your Name:</p>
-            <input type="text" id="name" name="name" placeholder="Full Name"><br>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="First and Last Name" required><br>
             
-            <p>Email Address:</p>
-            <input type="text" id="email" name="email" placeholder="example@domain.com"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" name="email" placeholder="example@domain.com" required><br>
         
-            <p>What are you interested in?</p>
-            <select id="interest" name="interest" required>
+            <label for="option">What are you interested in?</label><br>
+            <select id="option" name="option" required>
+                <option value="" disabled selected>Choose Your Interests</option>
                 <option value="shopping">Shopping</option>
                 <option value="attraction">Attraction</option>
                 <option value="adventure">Adventure</option>
@@ -57,26 +61,37 @@
                 <option value="food">Food</option>
             </select>
 
-            <br><button>Send</button>
+            <br><button type="button" id="submit-btn" onclick="validateForm()">Submit</button>
         </form>
+
+
+
     </section>
 
-<!--Offer Section-->
-    <section>
-        <div class="Comment-icon">
-            <p>Florence Hughes</p><br>
-            <p>Ibu Rumah Tangga</p><br>
+<!--Testimonial Section-->
+
+        <div class="packages-testimony">"I had a great time on my trip to Japan, but there were a couple of minor hiccups along the way. 
+            The itinerary was fantastic, and the hotels were great, but I encountered a small issue with transportation in Kyoto, where my bullet train tickets weren’t ready at the station. 
+            However, the team at the travel agency was quick to help me resolve the issue, and they even compensated me for the inconvenience. 
+            Overall, it was a great experience, and I would book with them again!"</div>
+        <div class="testimonial-icon">
+            <p>David R., Japan Tour</p>
         </div>
 
         <hr>
+<!--Package Offer Section-->
+    <section>
         <div>
             <p>We offers a unique chance to explore new cultures, unwind in breathtaking destinations, and create unforgettable memories.
             Whether you're seeking relaxation, adventure, or cultural discovery, our curated travel packages are designed to provide you with an unforgettable experience.
             Choose from our top destinations and start your next journey today!</p>
         </div>
-        <div>1. Relax on Bali's stunning beaches and explore its rich cultural heritage.</div>
-        <div>2. Discover the beauty of two of Europe’s most iconic destinations.</div>
-        <div>3. Experience the perfect mix of tradition and innovation in Japan.</div>
+
+        <ol>
+        <li>Relax on Bali's stunning beaches and explore its rich cultural heritage.</li>
+        <li>Discover the beauty of two of Europe’s most iconic destinations.</li>
+        <li>Experience the perfect mix of tradition and innovation in Japan.</li>
+        </ol>
     </section>
 
 <!--Our Packages Content-->
@@ -126,7 +141,7 @@
 <hr>
 
 <footer>
-    <section class="cta-container">
+    <section class="cta-container" id="cta-section">
         <p>Your next unforgettable adventure is just a click away.</p> 
         <p>Ready to start your journey?</p>
 
@@ -138,6 +153,6 @@
 
     <span>Made by Santika230 @2024</span>
 </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
